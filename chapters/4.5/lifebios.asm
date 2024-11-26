@@ -15,8 +15,8 @@
 
 	.model small
 	.stack	100h	; явное задание стека - для EXE-программ
-	.code
 	.186			; для команд shl al,4 и shr al,4
+	.code
 start:
 	push	FAR_BSS	; сегментный адрес буфера в DS
 	pop	ds
